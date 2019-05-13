@@ -1,0 +1,183 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-size: 14px;
+	font-family: 'Poppins', sans-serif;
+}
+
+#root{
+	display: flex;
+	justify-content: center;
+}
+
+#container{
+	/*background: pink;*/
+	width: 100%;
+	max-width: 1360px;
+	padding: 0 150px;
+}
+
+/*--------------------------------------*/
+
+#header{
+	background: white;
+	height: calc(100vh - 50px);
+	display: flex;
+	align-items: center;
+}
+
+#header p:first-child{
+	width: 75%;
+	font-size: 24px;
+	margin-bottom: 2rem;
+}
+
+#header p a{
+	text-decoration: none;
+	margin-right: 1rem;
+}
+
+#header p a, #header span{
+	color: #2C5FF2;
+}
+
+/*--------------------------------------*/
+
+#main{
+	/*background: lightBlue;*/
+}
+
+#main p#mainText{
+	color: #2C5FF2;
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+#main div#mainGallery div.rows{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 4rem;
+}
+
+#main div#mainGallery div.rows div.cells{
+	width: calc(50% - 20px);
+}
+
+#main div#mainGallery div.rows div.cells div{
+	background-size: cover;
+	background-repeat:no-repeat;
+	overflow: hidden;	
+	padding-top: 100%;
+	position: relative;
+	margin-bottom: 1rem;
+}
+
+#main div#mainGallery div.rows div.cells img{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	-webkit-transition: transform 0.3s ease-out;
+	transition: transform 0.3s ease-out;
+}
+
+#main div#mainGallery div.rows div.cells img:hover{
+	transform: scale(1.05);
+}
+
+#main p#mainTextAddition{
+	color: #2C5FF2;
+	text-align: center;
+	margin: 6rem 0 3rem;
+}
+
+#main div#mainGalleryAddition{
+	margin-bottom: 6rem;
+}
+
+#main div#mainGalleryAddition div.rows{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 3rem;
+}
+
+#main div#mainGalleryAddition div.rows div.cells{
+	width: calc(25% - 20px)
+}
+
+#main div#mainGalleryAddition div.rows div.cells img{
+	width: 100%;
+	margin-bottom: 1rem;
+}
+
+#main div#mainGalleryAddition div.rows div.cells img#bordered{
+	border: 1px solid #EEEEEE;
+}
+
+/*--------------------------------------*/
+
+#footer{
+	background: #F6F6F6;
+}
+
+#footer p{
+	text-align: center;
+	padding: 3rem 0;
+}
+
+#footer p a{
+	text-decoration: none;
+	color: black;
+}
+
+/*--------------------------------------*/
+
+@media only screen and (max-width: 768px) {
+	#container{
+		padding: 0 100px;
+	}
+} 
+
+@media only screen and (max-width: 600px) {
+	#container{
+		padding: 0 2rem;
+	}
+	#header p:first-child{
+		width: 100%;
+	}
+	#main div#mainGallery div.rows{
+		flex-wrap: wrap;
+		margin-bottom: 3rem;
+	}
+	#main div#mainGallery div.rows div.cells{
+		width: 100%;
+		min-width: 240px;
+	}
+	#main div#mainGallery div.rows div.cells:first-child{
+		margin-bottom: 3rem;
+	}
+	#main div#mainGalleryAddition div.rows{
+		flex-wrap: wrap;
+	}
+	#main div#mainGalleryAddition div.rows div.cells{
+		width: calc(50% - 0.5rem);
+		margin-bottom: 2rem;
+	}
+	#main div#mainGalleryAddition{
+		margin-bottom: 4rem;
+	}
+	#footer p{
+		padding: 2rem 0;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	#container{
+		padding: 0 1rem;
+	}
+} 

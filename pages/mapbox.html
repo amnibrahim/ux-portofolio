@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ibrahim</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+	<link rel="manifest" href="../favicon/site.webmanifest">
+	<link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" type="text/css" href="../style/blog.css">
+</head>
+<body>
+	<div id="root">
+		<div id="container">
+			<div class="homeButton">
+				<a href="../index.html">
+					<div>&#8592;</div>
+				</a>
+			</div>
+			<p id="titleBlog">Coworking Space Map</p>
+			<p id="titleBlogChild"><a href="https://youthful-lewin-aecfd4.netlify.com/" target="blank_">Coworking Space</a></p>
+			<p class="heading">Problem</p>
+			<p class="subtext">Today, there are many people that work in the tech industry. However, the limitation in finding space to be able to work in a team has made it difficult for people to communicate and discuss their project. In this project, a web based map application was made by making use of ReactJS router and a map API.</p>
+			<p class="heading">Role</p>
+			<p class="subtext">Front end developer - Develop Map Application in ReactJS</p>
+			<p class="heading">Process</p>
+			<p class="subtext">First, a list of coworking space in Jakarta was gathered in a json file. Each value contains data such as name, price, open hour, contact, description and coordinate location.</p>
+			<p class="subtext">Because the there are many data that would be displayed for each individual coworking space, thus, ReactJS router was used. The purpose is to display a list of available coworking space where each item would open a child component that shows the price, open hour, desciption, etc. By enabling ReactJS router, everytime a component is rendered, the page wouldn't need to refresh the page.</p>
+			<div class="imageText">
+				<img src="../img/content/mapbox/cospace2.jpg">
+			</div>
+			<div class="imageText">
+				<img src="../img/content/mapbox/cospace3.jpg">
+			</div>
+			<p class="heading">Challange</p>
+			<p class="subtext">During the development process, Google Maps API was considered to be the map component on the page. The decision was to take the advantage of "seacrh location by name" feature that Google Maps has which would make it easier to develop. However, by 2018, Google has decided to make this service to be no longer free. Although there is a $200 total of free requests, it is considered to be unsustainable. Once this free period ends, the page needs to use another free map API which obviously would reconstructure the whole component. Therefore, Mapbox API was used because it has complete documentation, different maps style and free. The only challange is that the json file that contains the raw data needs to be added with latitude and longitude coordinate as these would be used as input for icons on the maps.</p>
+			<div class="imageText">
+				<img src="../img/content/mapbox/cospace4.jpg">
+			</div>
+			<p class="heading">Outcome</p>
+			<p class="subtext">There are two three main components in the page. The navigation, the listed item, and the map. The direction in using this web app is from the left side which is the navigation component. In this component, user are able to decide which part of Jakarta that they are interesting to see a list of coworking spaces.</p>
+			<p class="subtext">The second component would let user to choose one item from a list of coworking space filtered by region in Jakarta. When user finally click an item, a complete information of price, open hour, contact and description. Once this component comes up, it would also trigger the third component which is the map component. A set of icons would show up in the map which indicate the location of the specified coworking space.</p>
+			<p class="heading">Improvement</p>
+			<p class="subtext">There are some things that could be improved, one of them is to provide an interactive icon on the map. Another thing is to provide a direction between user's location to selected icon on the map. In addition, currently, this project is unresponsive and was made for desktop only. The reason is because the map component requires 50% of screen width for user to be able to comfortably access the content which makes it difficult to be applied in mobile. However, this project would always be open to new ideas and would listen to any improvements.</p>
+			<p class="heading">Tools</p>
+			<p class="subtext">React.js, SASS, HTML/CSS/JavaScript, Figma</p>			
+			<p class="subtext">This Coworking Space Map Application can be visited on <a href="https://youthful-lewin-aecfd4.netlify.com/" target="blank_">Coworking Space</a></p>
+			<div class="nextButton" style="justify-content: flex-end;">
+				<a href="../pages/sport.html">
+					<div>
+						<p>Next &nbsp;&#8594;</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
