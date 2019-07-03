@@ -85,6 +85,7 @@ p.heading{
 p.subtext{
 	font-size: 1rem;
 	margin-bottom: 1rem;
+	line-height: 20px;
 }
 
 div.imageText img{
